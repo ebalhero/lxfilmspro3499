@@ -54,14 +54,38 @@
                 </div>
             </div></div>
 
-  <section id="embed">
-    <iframe 
-      src="https://lexiconxpro.ordersini.com/view/s/cuba-e-kad?iframe=yes"
-      frameborder="0"
-      allowtransparency="true"
-      style="width:100%; height:100vh; border:none; display:block;">
-    </iframe>
-  </section>
 
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* elak dua scroll */
+    }
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+      overflow: hidden;
+      z-index: 9999; /* pastikan sentiasa atas */
+    }
+  </style>
+</head>
+
+<body>
+
+  <iframe 
+    src="https://lexiconxpro.ordersini.com/view/s/cuba-e-kad?iframe=yes"
+    frameborder="0"
+    allowtransparency="true"
+    scrolling="no">
+  </iframe>
+
+</body>
+</html>
       
     </div></body></html>
